@@ -1,0 +1,39 @@
+<div class="rocket_container">
+  <div class="rocket"></div>
+  <div class="rocket2"></div>
+  <div class="rocket_window"></div>
+  <div class="rocket_window2"></div>
+  <div class="rocket_spoiler"></div>
+  <div class="turbo"></div>
+  <div class="flames"></div>
+  <div class="smoke-trail">
+    <div
+      *ngFor="let smoke of smokeTrail"
+      class="smoke"
+      [ngStyle]="{
+        left: smoke.x + 'px',
+        animationDelay: smoke.delay + 's',
+        transform: 'scale(' + smoke.scale + ')'
+      }"
+    ></div>
+  </div>
+</div>
+
+
+<div
+  *ngFor="let cloud of clouds"
+  class="cloud"
+  [ngStyle]="{
+    '--s': cloud.scale,
+    '--o': cloud.opacity,
+    '--delay': cloud.delay,
+    '--dur': cloud.duration,
+    left: cloud.left
+  }"
+>
+  <div class="bubble b1"></div>
+  <div class="bubble b2"></div>
+  <div class="bubble b3"></div>
+  <div class="bubble b4"></div>
+  <div class="bubble b5"></div>
+</div>
