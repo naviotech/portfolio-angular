@@ -1,0 +1,69 @@
+<div class="rocket_container">
+  <div class="rocket"></div>
+  <div class="rocket2"></div>
+  <div class="rocket_window"></div>
+  <div class="rocket_window2"></div>
+  <div class="rocket_spoiler"></div>
+  <div class="turbo"></div>
+  <div class="flames"></div>
+  <div class="smoke-trail">
+    <div
+      *ngFor="let smoke of smokeTrail"
+      class="smoke"
+      [ngStyle]="{
+        left: smoke.x + 'px',
+        animationDelay: smoke.delay + 's',
+        transform: 'scale(' + smoke.scale + ')'
+      }"
+    ></div>
+  </div>
+</div>
+
+<div
+  *ngFor="let cloud of clouds"
+  class="cloud"
+  [ngStyle]="{
+    '--s': cloud.scale,
+    '--o': cloud.opacity,
+    '--delay': cloud.delay,
+    '--dur': cloud.duration,
+    left: cloud.left
+  }"
+>
+  <div class="bubble b1"></div>
+  <div class="bubble b2"></div>
+  <div class="bubble b3"></div>
+  <div class="bubble b4"></div>
+  <div class="bubble b5"></div>
+</div>
+
+<div class="bird-wrapper">
+  <div class="bird">
+    <div class="tail"></div>
+    <div class="tail2"></div>
+    <div class="tail3"></div>
+    <div class="body"></div>
+    <div class="body2"></div>
+    <div class="head"></div>
+    <div class="head2"></div>
+    <div class="eye"></div>
+    <div class="beak"></div>
+    <div class="leg"></div>
+    <div class="leg2"></div>
+    <div class="wing">
+      <div class="feather"></div>
+      <div class="feather2"></div>
+      <div class="feather3"></div>
+      <div class="feather4"></div>
+      <div class="feather_big"></div>
+      <div class="feather_big2"></div>
+      <div class="feather_big3"></div>
+      <div class="feather_big4"></div>
+      <div class="feather_big5"></div>
+      <div class="feather_big6"></div>
+      <div class="feather_big7"></div>
+      <div class="feather_big8"></div>
+      <div class="feather_big9"></div>
+    </div>
+  </div>
+</div>

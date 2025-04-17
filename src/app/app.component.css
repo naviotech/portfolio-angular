@@ -1,0 +1,8 @@
+.background{
+  position: fixed;
+  opacity: 0.2;
+  left: 50%;
+  bottom: 0%;
+  min-width: 600px;
+  height: auto;
+}
