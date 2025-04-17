@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PostComponent } from "../../shared/components/post/post.component";
 
 @Component({
-  selector: 'education-page',
+  selector: 'contact-page',
   imports: [PostComponent],
-  templateUrl: './education-page.component.html',
+  templateUrl: './experience-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class EducationPageComponent { }
+export default class ExperiencePageComponent { }

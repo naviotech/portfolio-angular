@@ -7,9 +7,9 @@ export const routes: Routes = [
     component: AboutPageComponent,
   },
   {
-    path: 'contact',
+    path: 'experience',
     loadComponent: () =>
-      import('./modules/pages/contact/contact-page.component'),
+      import('./modules/pages/experience/experience-page.component'),
   },
   {
     path: 'education',

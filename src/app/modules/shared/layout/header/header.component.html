@@ -102,14 +102,14 @@
         </svg>
         <p class="text-gray-500 text-sm">Disponible</p>
       </div>
-      <div class="flex items-center gap-1 -mb-3">
+      <a class="flex items-center gap-1 -mb-3 cursor-pointer group" href="#links">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-5 text-gray-400"
+          class="size-5 text-gray-400 group-hover:text-blue-500"
         >
           <path
             stroke-linecap="round"
@@ -118,8 +118,8 @@
           />
         </svg>
 
-        <p class="text-gray-500 text-sm">Links</p>
-      </div>
+        <p class="text-gray-500 text-sm group-hover:text-blue-500">Links</p>
+      </a>
       <div class="flex items-center gap-1 -mb-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -166,6 +166,17 @@
       >
       <a
         class="hover:bg-gray-200 w-full text-center py-4"
+        routerLink="/experience"
+      >
+        <span
+          routerLinkActive="border-b-4 border-blue-400"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="py-2 flex-nowrap"
+          >Experiencia</span
+        ></a
+      >
+      <a
+        class="hover:bg-gray-200 w-full text-center py-4"
         routerLink="/education"
       >
         <span
@@ -184,17 +195,6 @@
           [routerLinkActiveOptions]="{ exact: true }"
           class="py-2 flex-nowrap"
           >Proyectos</span
-        ></a
-      >
-      <a
-        class="hover:bg-gray-200 w-full text-center py-4"
-        routerLink="/contact"
-      >
-        <span
-          routerLinkActive="border-b-4 border-blue-400"
-          [routerLinkActiveOptions]="{ exact: true }"
-          class="py-2 flex-nowrap"
-          >Contacto</span
         ></a
       >
     </nav>
