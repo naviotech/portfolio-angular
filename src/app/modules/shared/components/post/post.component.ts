@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component, input, OnInit, signal } from '@angular/core';
 import { CheckMarkComponent } from "../checkMark/checkMark.component";
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'post-component',
-  imports: [CheckMarkComponent],
+  imports: [CheckMarkComponent, NgClass],
   templateUrl: './post.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -24,10 +25,20 @@ export class PostComponent implements OnInit {
   repost = input<number>(2)
   graph = input<number>(203)
 
+  plusOrRest = signal(false)
+
   ngOnInit(): void {
     this.likesPlus.set(this.likes());
   }
+
   setLike(number:number){
-    this.likesPlus.update(data => data + number)
+    if(!this.plusOrRest()){
+      this.likesPlus.update(data => data + number)
+      this.plusOrRest.set(true)
+    }else{
+      this.likesPlus.update(data => data - number)
+      this.plusOrRest.set(false)
+    }
+
   }
 }

@@ -1,121 +1,27 @@
 <div class="flex flex-col justify-center items-center gap-6">
+  @for (info of infos(); track info.containTitle) {
   <section class="w-full px-4 max-w-3xl">
     <post-component
-      date="Apr 21, 2025"
+      [date]="info.datePost"
       [isProyect]="true"
-      [isProyectGit]="'https://github.com/naviotech/Cocktails-App'"
-      [isProyectUrl]="'https://cocktail-app-naviotech.netlify.app/'"
+      [isProyectGit]="info.urlGitPost!"
+      [isProyectUrl]="info.urlProyectPost!"
       [imageProfile]="'assets/img/web.jpg'"
-      [imagePost]="'./assets/img/cocktail.png'"
+      [imagePost]="info.imagePost"
+      [comments]="info.comments"
+      [likes]="info.likes"
+      [repost]="info.repost"
+      [graph]="info.graph"
       [contain]="`
-  <b>Cocktails App</b><br>
-  <i>Jul. 2024</i><br><br>
+    <b>${info.containTitle}</b><br>
+    <i>${info.containDate}</i><br><br>
 
-  Proyecto Web para descubrir qué cócteles y bebidas puedes preparar con los ingredientes que tienes, con un recetario integrado y una sección de favoritos.<br><br>
+    ${info.containExplain}<br><br>
 
-  <b>Tecnologías utilizadas:</b><br>
-  <p>- HTML5, CSS, TailwindCSS, TypeScript, React, vite.</p>
-`"
+    <b>${info.containApt}:</b><br>
+    <p>${info.containAptInfo}</p>
+  `"
     />
   </section>
-
-  <section class="w-full px-4 max-w-3xl">
-    <post-component
-      date="Apr 21, 2025"
-      [isProyect]="true"
-      [isProyectGit]="'https://github.com/naviotech/FinalWeatherApp'"
-      [isProyectUrl]="'https://finalweatherapp-naviotech.netlify.app/'"
-      [imageProfile]="'assets/img/web.jpg'"
-      [imagePost]="'./assets/img/clone.png'"
-      [contain]="`
-  <b>Weather App</b><br>
-  <i>Jul. 2024</i><br><br>
-
-  Esta Web te permite conocer en tiempo real el tiempo actual y previsto del lugar en el que te encuentras asi como otros parametros importantes relacionados con el tiempo meteorológico. Tambien te permite hacer busquedas del tiempo de los lugares que desees.<br><br>
-
-  <b>Tecnologías utilizadas:</b><br>
-  <p>- HTML5, CSS, TailwindCSS, TypeScript, React, vite.</p>
-`"
-    />
-  </section>
-
-  <section class="w-full px-4 max-w-3xl">
-    <post-component
-      date="Apr 21, 2025"
-      [isProyect]="true"
-      [isProyectGit]="'https://github.com/naviotech/expense-planner'"
-      [isProyectUrl]="'https://expense-planner-naviotech.netlify.app/'"
-      [imageProfile]="'assets/img/web.jpg'"
-      [imagePost]="'./assets/img/expense.png'"
-      [contain]="`
-  <b>Planificador de Gastos</b><br>
-  <i>Jun. 2024</i><br><br>
-
-  Herramienta fácil de usar para gestionar y planificar tus gastos. Te ayuda a llevar un seguimiento de tus ingresos y gastos, y a optimizar tu presupuesto. Ideal para mantener tus finanzas en orden.<br><br>
-
-  <b>Tecnologías utilizadas:</b><br>
-  <p>- HTML5, CSS, TypeScript, React, vite.</p>
-`"
-    />
-  </section>
-
-  <section class="w-full px-4 max-w-3xl">
-    <post-component
-      date="Apr 21, 2025"
-      [isProyect]="true"
-      [isProyectGit]="'https://github.com/naviotech/CoinMarketWatch'"
-      [isProyectUrl]="'https://shorturlapp-mayadevv.netlify.app/'"
-      [imageProfile]="'assets/img/web.jpg'"
-      [imagePost]="'./assets/img/coinmarket.png'"
-      [contain]="`
-  <b>CoinMarketWatch</b><br>
-  <i>Jun. 2024</i><br><br>
-
-  Herramienta para seguir los precios y variaciones de tus criptomonedas favoritas pudiendo elegir la divisa que mas se ajuste a tu localización. También tiene sección de noticias actualizadas sobre el mundo cripto.<br><br>
-
-  <b>Tecnologías utilizadas:</b><br>
-  <p>- HTML5, CSS, TailwindCss, JavaScript Vanilla, vite.</p>
-`"
-    />
-  </section>
-
-  <section class="w-full px-4 max-w-3xl">
-    <post-component
-      date="Apr 21, 2025"
-      [isProyect]="true"
-      [isProyectGit]="'https://github.com/naviotech/Ecomerce'"
-      [isProyectUrl]="'https://ecomerce-mayadevv.netlify.app/'"
-      [imageProfile]="'assets/img/web.jpg'"
-      [imagePost]="'./assets/img/ecomerce.png'"
-      [contain]="`
-  <b>Ecomerce Auriculares</b><br>
-  <i>Mar. 2024</i><br><br>
-
-  Este proyecto es un ejemplo de un sistema de comercio electrónico desarrollado con javaScript Vanilla. Permite a los usuarios explorar una variedad de productos, agregarlos a un carrito de compras, completar un formulario de datos para el envío y simular el pago de la orden seleccionada.<br><br>
-
-  <b>Tecnologías utilizadas:</b><br>
-  <p>- HTML5, CSS, Sass, JavaScript Vanilla, vite.</p>
-`"
-    />
-  </section>
-
-  <section class="w-full px-4 max-w-3xl">
-    <post-component
-      date="Apr 21, 2025"
-      [isProyect]="true"
-      [isProyectGit]="'https://github.com/naviotech/ShortUrlApp'"
-      [isProyectUrl]="'https://shorturlapp-mayadevv.netlify.app/'"
-      [imageProfile]="'assets/img/web.jpg'"
-      [imagePost]="'./assets/img/short.png'"
-      [contain]="`
-  <b>ShortUrl App</b><br>
-  <i>Feb. 2024</i><br><br>
-
-  Este proyecto se enfoca precisamente en abordar esta la necesidad de compartir enlaces concisos , proporcionando una solución eficiente y versátil para la creación de URLs cortas y su acceso a través de códigos QR. Al ofrecer una plataforma intuitiva y fácil de usar, busco simplificar el proceso de compartir enlaces mientras optimizo la experiencia del usuario.<br><br>
-
-  <b>Tecnologías utilizadas:</b><br>
-  <p>- HTML5, CSS, Sass, JavaScript Vanilla, vite.</p>
-`"
-    />
-  </section>
+  }
 </div>
