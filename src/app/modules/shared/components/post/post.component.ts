@@ -8,6 +8,9 @@ import { CheckMarkComponent } from "../checkMark/checkMark.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PostComponent implements OnInit {
+  isProyect = input<boolean>(false)
+  isProyectUrl = input<string>("")
+  isProyectGit = input<string>("")
 
   date = input.required<string>()
   pinned = input(false)

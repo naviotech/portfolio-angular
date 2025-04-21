@@ -10,4 +10,11 @@ import { RocketComponent } from "../../components/rocket/rocket.component";
   styleUrl:"./header.component.css",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class HeaderComponent { }
+export default class HeaderComponent {
+  scrollToFooter() {
+    const footer = document.getElementById('links');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}
