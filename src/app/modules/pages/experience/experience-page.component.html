@@ -1,23 +1,26 @@
-<div class="flex flex-col justify-center items-center dark:bg-gray-900 dark:text-white">
+<div
+  class="flex flex-col justify-center items-center dark:bg-gray-900 dark:text-white"
+>
+  @for (info of infos(); track info.containTitle) {
   <section class="w-full px-4 max-w-3xl">
     <post-component
-      date="Mar 30, 2025"
-      [imageProfile]="'assets/img/web.jpg'"
-      [imagePost]="'./assets/img/needcarhelp.png'"
+      [date]="info.datePost | translate"
+      [imageProfile]="info.imageProfile"
+      [imagePost]="info.imagePost"
+      [comments]="info.comments"
+      [likes]="info.likes"
+      [repost]="info.repost"
+      [graph]="info.graph"
       [contain]="`
-  <b>Desarrollador Full Stack (Needcarhelp SL)</b><br>
-  <i>Ago. 2024 - Actualidad [Barcelona, España]</i><br><br>
+      <b>${info.containTitle | translate}</b><br>
+      <i>${info.containDate | translate}</i><br><br>
 
-  Reconocido por mis contribuciones en múltiples proyectos, incluyendo un panel de usuario para clientes, que mejoró la experiencia de usuario y fortaleció el compromiso con los clientes.<br><br>
+      ${info.containExplain | translate}<br><br>
 
-  <b>Responsabilidades:</b><br>
-  • Desarrollé un panel de usuario personalizado que permitió la gestión de servicios individualizados.<br>
-  • Colaboré con diseñadores en reuniones de planificación de sprints, asegurando la alineación con los objetivos del proyecto y aportando ideas clave que mejoraron la usabilidad.<br>
-  • Implementé mejoras y desarrollé nuevas funcionalidades en los servicios ofrecidos por la empresa, con foco en aumentar la captación y retención de clientes mediante soluciones escalables y eficientes.<br>
-  • Jugué un papel clave en el desarrollo de una aplicación móvil interna para, lo que redujo el consumo de recursos en distintos departamentos gracias a la automatización de tareas manuales.<br>
-  • Trabajé estrechamente con diseñadores y otros desarrolladores en un entorno Ágil para cumplir con los plazos y objetivos del proyecto.<br>
-  • Dirigí la presentación del nuevo producto desarrollado ante inversores, mostrando el impacto positivo que tendría en la empresa.
-`"
+      <b>${info.containApt | translate}:</b><br>
+      <p>${info.containAptInfo | translate}</p>
+    `"
     />
   </section>
+  }
 </div>

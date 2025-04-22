@@ -2,7 +2,7 @@
   @for (info of infos(); track info.containTitle) {
   <section class="w-full px-4 max-w-3xl">
     <post-component
-      [date]="info.datePost"
+      [date]="info.datePost | translate"
       [isProyect]="true"
       [isProyectGit]="info.urlGitPost!"
       [isProyectUrl]="info.urlProyectPost!"
@@ -13,13 +13,13 @@
       [repost]="info.repost"
       [graph]="info.graph"
       [contain]="`
-    <b>${info.containTitle}</b><br>
-    <i>${info.containDate}</i><br><br>
+    <b>${info.containTitle | translate}</b><br>
+    <i>${info.containDate | translate} </i><br><br>
 
-    ${info.containExplain}<br><br>
+    ${info.containExplain | translate}<br><br>
 
-    <b>${info.containApt}:</b><br>
-    <p>${info.containAptInfo}</p>
+    <b>${info.containApt | translate}:</b><br>
+    <p>${info.containAptInfo | translate}</p>
   `"
     />
   </section>

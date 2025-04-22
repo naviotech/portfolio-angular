@@ -1,0 +1,132 @@
+{
+  "header": {
+    "lang.cast": "Castellano",
+    "lang.en": "Inglés",
+    "slogan": "Transformando ideas a código ✨",
+    "title": "Full stack Developer",
+    "status.available": "Disponible",
+    "nav.links": "Enlaces",
+    "status.birthday": "Enero 31",
+    "status.join": "Se unió en Octubre de 2022",
+    "nav.about": "Sobre mí",
+    "nav.experience": "Experiencia",
+    "nav.education": "Educación",
+    "nav.projects": "Proyectos"
+  },
+  "page_about": {
+    "date": "Mar 30, 2025",
+    "pinned": "Anclado",
+    "info_intro": "¡Hola! Soy Edu, un apasionado de la programación que se dedica tanto al frontend como al backend. Mi viaje comenzó en un mundo completamente diferente, el de la nutrición. En este desarrollé una mentalidad analítica y orientada a los detalles. Con el tiempo, ese enfoque se convirtió en la base sólida para mi evolución en el desarrollo web.",
+    "info_total": "Hoy, como desarrollador full stack, disfruto creando experiencias completas y funcionales. En lo personal, soy una persona tranquila y muy curiosa. En mis ratos libres me encontrarás en el gimnasio, montando en moto o investigando sobre cualquier tema. Siempre busco aprender y evolucionar, y me encanta compartir todo lo que descubro en mi camino. ¡Gracias por visitar mi portfolio, espero que te guste lo que ves!"
+  },
+  "page_experience": {
+    "one": {
+      "datePost": "Mar 30, 2025",
+      "containTitle": "Desarrollador Full Stack (Needcarhelp SL)",
+      "containDate": "Ago. 2024 - Actualidad [Barcelona, España]",
+      "containExplain": "Reconocido por mis contribuciones en múltiples proyectos, incluyendo un panel de usuario para clientes, que mejoró la experiencia de usuario y fortaleció el compromiso con los clientes.",
+      "containApt": "Responsabilidades",
+      "containAptInfo": "- Desarrollo de un panel de usuario personalizado para gestión individual de servicios.\n- Colaboración con diseñadores en sprints, asegurando alineación con objetivos de producto y mejoras en usabilidad.\n- Implementación de nuevas funcionalidades enfocadas en captación y retención de clientes.\n- Desarrollo de una app móvil interna que automatizó tareas manuales y optimizó recursos interdepartamentales.\n- Trabajo en equipo en un entorno Ágil con entregas a tiempo.\n- Presentación del producto final ante inversores destacando su impacto en el negocio."
+    }
+  },
+  "page_education": {
+    "one": {
+      "datePost": "Apr 17, 2025",
+      "containTitle": "Curso NestJs (Udemy)",
+      "containDate": "Mar. 2025 - Abr. 2025",
+      "containExplain": "Formación en NestJS enfocada en el desarrollo backend escalable con TypeScript. Aprendí a construir APIs RESTful, estructurar proyectos con arquitectura modular y aplicar buenas prácticas como inyección de dependencias y validación de datos.",
+      "containApt": "Aptitudes",
+      "containAptInfo": "- Desarrollo de APIs RESTful con NestJS, arquitectura modular y mantenible, inyección de dependencias, validación y serialización de datos, manejo de controladores, servicios y middlewares, integración con bases de datos (TypeORM/Prisma), uso de Pipes, Guards e Interceptors, autenticación y autorización (JWT, Passport)."
+    },
+    "two": {
+      "datePost": "17 Abr. 2025",
+      "containTitle": "Curso Angular Pro (Udemy)",
+      "containDate": "Mar. 2025 - Mar. 2025",
+      "containExplain": "Formación centrada en Angular 19 siguiendo buenas prácticas. Aprendí a construir aplicaciones escalables utilizando componentes, servicios, enrutamiento, formularios reactivos, gestión de estado y consumo de APIs.",
+      "containApt": "Aptitudes",
+      "containAptInfo": "- Desarrollo de SPAs con Angular 19, arquitectura basada en componentes, formularios reactivos y dirigidos por plantillas, enrutamiento y carga diferida (lazy loading), inyección de dependencias y servicios, integración con APIs REST, observables y programación reactiva con RxJS, mejora de rendimiento y SEO con SSR."
+    },
+    "three": {
+      "datePost": "16 Abr. 2025",
+      "containTitle": "UX/UI (Universidad Nebrija)",
+      "containDate": "Ago. 2024 - Feb. 2025",
+      "containExplain": "Curso enfocado en diseño de experiencia de usuario. Aprendí a investigar necesidades del usuario, crear wireframes y prototipos, y aplicar principios de usabilidad para mejorar la interacción con productos digitales.",
+      "containApt": "Aptitudes",
+      "containAptInfo": "- Investigación centrada en el usuario, creación de wireframes y prototipos interactivos, arquitectura de la información, principios de usabilidad y accesibilidad, pruebas con usuarios y validación de interfaces."
+    },
+    "four": {
+      "datePost": "16 Abr. 2025",
+      "containTitle": "Curso Next.js (Udemy)",
+      "containDate": "Ago. 2024 - Sept. 2024",
+      "containExplain": "Curso orientado a dominar el framework más popular de la librería JavaScript React.",
+      "containApt": "Aptitudes",
+      "containAptInfo": "- Next.js, React, TypeScript, Zustand, Redux, JWT, Docker, Prisma."
+    },
+    "five": {
+      "datePost": "15 Abr. 2025",
+      "containTitle": "CS50 SQL, Bases de Datos (Universidad de Harvard)",
+      "containDate": "Ene. 2023 - Dic. 2023",
+      "containExplain": "Curso centrado en bases de datos relacionales con SQL. Aprendí a modelar datos, realizar consultas complejas, optimizar búsquedas y aplicar buenas prácticas de normalización.",
+      "containApt": "Aptitudes",
+      "containAptInfo": "- SQLite, SQL."
+    },
+    "six": {
+      "datePost": "15 Abr. 2025",
+      "containTitle": "Máster Full Stack Developer (ConquerBlocks)",
+      "containDate": "Sept. 2022 - Oct. 2024 [Barcelona, España]",
+      "containExplain": "Máster en Desarrollo Web Full Stack en ConquerBlocks, enfocado en el aprendizaje práctico de tecnologías modernas de frontend y backend. Adquirí experiencia construyendo aplicaciones reales utilizando JavaScript, Node.js, bases de datos y frameworks modernos.",
+      "containApt": "Aptitudes",
+      "containAptInfo": "- Linux, Git, GitHub, HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Angular, Node.js, SQL."
+    }
+  },
+  "page_projects": {
+    "one": {
+      "datePost": "21 Abr. 2025",
+      "containTitle": "Cocktails App",
+      "containDate": "Jul. 2024",
+      "containExplain": "Proyecto Web para descubrir qué cócteles y bebidas puedes preparar con los ingredientes que tienes, con un recetario integrado y una sección de favoritos.",
+      "containApt": "Tecnologías utilizadas",
+      "containAptInfo": "- HTML5, CSS, TailwindCSS, TypeScript, React, vite."
+    },
+    "two": {
+      "datePost": "21 Abr. 2025",
+      "containTitle": "Weather App",
+      "containDate": "Jul. 2024",
+      "containExplain": "Esta Web te permite conocer en tiempo real el tiempo actual y previsto del lugar en el que te encuentras así como otros parámetros importantes relacionados con el tiempo meteorológico. También te permite hacer búsquedas del tiempo de los lugares que desees.",
+      "containApt": "Tecnologías utilizadas",
+      "containAptInfo": "- HTML5, CSS, TailwindCSS, TypeScript, React, vite."
+    },
+    "three": {
+      "datePost": "21 Abr. 2025",
+      "containTitle": "Planificador de Gastos",
+      "containDate": "Jun. 2024",
+      "containExplain": "Herramienta fácil de usar para gestionar y planificar tus gastos. Te ayuda a llevar un seguimiento de tus ingresos y gastos, y a optimizar tu presupuesto. Ideal para mantener tus finanzas en orden.",
+      "containApt": "Tecnologías utilizadas",
+      "containAptInfo": "- HTML5, CSS, TypeScript, React, vite."
+    },
+    "four": {
+      "datePost": "21 Abr. 2025",
+      "containTitle": "CoinMarketWatch",
+      "containDate": "Jun. 2024",
+      "containExplain": "Herramienta para seguir los precios y variaciones de tus criptomonedas favoritas pudiendo elegir la divisa que más se ajuste a tu localización. También tiene sección de noticias actualizadas sobre el mundo cripto.",
+      "containApt": "Tecnologías utilizadas",
+      "containAptInfo": "- HTML5, CSS, TailwindCss, JavaScript Vanilla, vite."
+    },
+    "five": {
+      "datePost": "21 Abr. 2025",
+      "containTitle": "Ecomerce Auriculares",
+      "containDate": "Mar. 2024",
+      "containExplain": "Este proyecto es un ejemplo de un sistema de comercio electrónico desarrollado con JavaScript Vanilla. Permite a los usuarios explorar una variedad de productos, agregarlos a un carrito de compras, completar un formulario de datos para el envío y simular el pago de la orden seleccionada.",
+      "containApt": "Tecnologías utilizadas",
+      "containAptInfo": "- HTML5, CSS, Sass, JavaScript Vanilla, vite."
+    },
+    "six": {
+      "datePost": "21 Abr. 2025",
+      "containTitle": "ShortUrl App",
+      "containDate": "Feb. 2024",
+      "containExplain": "Este proyecto se enfoca precisamente en abordar la necesidad de compartir enlaces concisos, proporcionando una solución eficiente y versátil para la creación de URLs cortas y su acceso a través de códigos QR. Al ofrecer una plataforma intuitiva y fácil de usar, busco simplificar el proceso de compartir enlaces mientras optimizo la experiencia del usuario.",
+      "containApt": "Tecnologías utilizadas",
+      "containAptInfo": "- HTML5, CSS, Sass, JavaScript Vanilla, vite."
+    }
+  }
+}

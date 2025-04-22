@@ -1,14 +1,16 @@
-import { ChangeDetectionStrategy, Component, input, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, input, OnInit, signal } from '@angular/core';
 import { CheckMarkComponent } from "../checkMark/checkMark.component";
 import { NgClass } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'post-component',
-  imports: [CheckMarkComponent, NgClass],
+  imports: [CheckMarkComponent, NgClass, TranslateModule],
   templateUrl: './post.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PostComponent implements OnInit {
+  translate = inject(TranslateService)
   isProyect = input<boolean>(false)
   isProyectUrl = input<string>("")
   isProyectGit = input<string>("")
