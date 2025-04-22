@@ -1,8 +1,8 @@
-<section class="w-full flex flex-col py-24 justify-center items-center">
+<section class="w-full flex flex-col py-24 justify-center items-center dark:bg-gray-900">
   <div class="w-full max-w-3xl px-4 flex flex-col justify-center items-center">
     <section class="flex items-center gap-2" id="links">
       <a
-        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl"
+        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl dark:hover:bg-gray-700"
         href="https://www.linkedin.com/in/naviomaya"
         target="_blank"
         alt="linkedin"
@@ -18,7 +18,7 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin rounded-full"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin rounded-full dark:text-white"
           alt="linkedin"
           title="linkedin"
         >
@@ -34,7 +34,7 @@
       </a>
 
       <a
-        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl"
+        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl dark:hover:bg-gray-700"
         href="https://github.com/naviotech"
         target="_blank"
         alt="github"
@@ -50,7 +50,7 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github dark:text-white"
           alt="github"
           title="github"
         >
@@ -61,7 +61,7 @@
         </svg>
       </a>
       <a
-        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl"
+        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl dark:hover:bg-gray-700"
         href="https://www.instagram.com/naviotech"
         target="_blank"
         alt="instagram"
@@ -77,7 +77,7 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram dark:text-white"
           alt="instagram"
           title="instagram"
         >
@@ -90,7 +90,7 @@
         </svg>
       </a>
       <a
-        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl"
+        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl dark:hover:bg-gray-700"
         href="mailto:enavio.tech@gmail.com"
         alt="mail"
         title="mail"
@@ -105,7 +105,7 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-mail dark:text-white"
           alt="mail"
           title="mail"
         >
@@ -117,9 +117,10 @@
         </svg>
       </a>
       <a
-        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl"
+        class="cursor-pointer hover:bg-gray-200 p-2 rounded-xl dark:hover:bg-gray-700"
+        href="assets/EduardoNavioMaya.pdf"
+        download='EduardoNavioMaya.pdf'
 
-        alt="cv"
         title="cv"
       >
         <svg
@@ -132,7 +133,8 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-file-cv"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-file-cv dark:text-white"
+
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M14 3v4a1 1 0 0 0 1 1h4" />
@@ -145,7 +147,7 @@
       </a>
     </section>
     <section>
-      <p>naviotech © {{ year() }}</p>
+      <p class="text-gray-400 mt-4">naviotech © {{ year() }}</p>
     </section>
   </div>
 </section>

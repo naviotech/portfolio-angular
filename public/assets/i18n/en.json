@@ -1,0 +1,132 @@
+{
+  "header": {
+    "lang.cast": "Spanish",
+    "lang.en": "English",
+    "slogan": "Transforming ideas into code ✨",
+    "title": "Full Stack Developer",
+    "status.available": "Available",
+    "nav.links": "Links",
+    "status.birthday": "January 31",
+    "status.join": "Joined in October 2022",
+    "nav.about": "About Me",
+    "nav.experience": "Experience",
+    "nav.education": "Education",
+    "nav.projects": "Projects"
+  },
+  "page_about": {
+    "date": "Mar 30, 2025",
+    "pinned": "Pinned",
+    "info_intro": "Hi! I'm Edu, a passionate programmer working both in frontend and backend. My journey started in a completely different world — nutrition. There, I developed an analytical and detail-oriented mindset. Over time, that mindset became the strong foundation for my evolution in web development.",
+    "info_total": "Today, as a full stack developer, I enjoy creating complete and functional experiences. Personally, I'm a calm and curious person. In my free time, you’ll find me at the gym, riding my motorcycle, or researching random topics. I'm always looking to learn and grow, and I love sharing everything I discover along the way. Thanks for visiting my portfolio — I hope you enjoy what you see!"
+  },
+  "page_experience": {
+    "one": {
+      "datePost": "Mar 30, 2025",
+      "containTitle": "Full Stack Developer (Needcarhelp SL)",
+      "containDate": "Aug. 2024 - Present [Barcelona, Spain]",
+      "containExplain": "Recognized for my contributions to multiple projects, including a custom user dashboard that improved user experience and enhanced client engagement.",
+      "containApt": "Responsibilities",
+      "containAptInfo": "- Developed a custom user dashboard for personalized service management.\n- Collaborated with designers during sprint planning to ensure alignment with goals and improved usability.\n- Implemented new features to boost customer acquisition and retention through scalable solutions.\n- Played a key role in developing an internal mobile app, which automated manual tasks and reduced resource usage across departments.\n- Worked closely with designers and developers in an Agile environment to meet deadlines.\n- Led the product presentation to investors, highlighting its positive business impact."
+    }
+  },
+  "page_education": {
+    "one": {
+      "datePost": "Apr 17, 2025",
+      "containTitle": "NestJS Course (Udemy)",
+      "containDate": "Mar. 2025 - Apr. 2025",
+      "containExplain": "Training in NestJS focused on scalable backend development with TypeScript. I learned how to build RESTful APIs, structure projects using a modular architecture, and apply best practices such as dependency injection and data validation.",
+      "containApt": "Skills",
+      "containAptInfo": "- RESTful API development with NestJS, modular and maintainable architecture, dependency injection, data validation and serialization, handling of controllers, services, and middlewares, integration with databases (TypeORM/Prisma), use of Pipes, Guards, and Interceptors, authentication and authorization (JWT, Passport)."
+    },
+    "two": {
+      "datePost": "Apr 17, 2025",
+      "containTitle": "Angular Pro Course (Udemy)",
+      "containDate": "Mar. 2025 - Mar. 2025",
+      "containExplain": "Training focused on Angular 19 following best practices. I learned to build scalable applications using components, services, routing, reactive forms, state management, and API consumption.",
+      "containApt": "Skills",
+      "containAptInfo": "- SPA development with Angular 19, component-based architecture, reactive and template-driven forms, routing and lazy loading, dependency injection and services, REST API integration, observables and reactive programming with RxJS, performance and SEO improvement with SSR."
+    },
+    "three": {
+      "datePost": "Apr 16, 2025",
+      "containTitle": "UX/UI (Nebrija University)",
+      "containDate": "Aug. 2024 - Feb. 2025",
+      "containExplain": "Course focused on user experience design. I learned how to research user needs, create wireframes and prototypes, and apply usability principles to improve digital product interaction.",
+      "containApt": "Skills",
+      "containAptInfo": "- User-centered research, creation of wireframes and interactive prototypes, information architecture, usability and accessibility principles, user testing, and interface validation."
+    },
+    "four": {
+      "datePost": "Apr 16, 2025",
+      "containTitle": "Next.js Course (Udemy)",
+      "containDate": "Aug. 2024 - Sept. 2024",
+      "containExplain": "Course aimed at mastering the most popular framework of the JavaScript library React.",
+      "containApt": "Skills",
+      "containAptInfo": "- Next.js, React, TypeScript, Zustand, Redux, JWT, Docker, Prisma."
+    },
+    "five": {
+      "datePost": "Apr 15, 2025",
+      "containTitle": "CS50 SQL, Databases (Harvard University)",
+      "containDate": "Jan. 2023 - Dec. 2023",
+      "containExplain": "Course focused on relational databases with SQL. I learned how to model data, perform complex queries, optimize searches, and apply normalization best practices.",
+      "containApt": "Skills",
+      "containAptInfo": "- SQLite, SQL."
+    },
+    "six": {
+      "datePost": "Apr 15, 2025",
+      "containTitle": "Full Stack Developer Master's Degree (ConquerBlocks)",
+      "containDate": "Sept. 2022 - Oct. 2024 [Barcelona, Spain]",
+      "containExplain": "Full Stack Web Development Master's program at ConquerBlocks, focused on hands-on learning of modern frontend and backend technologies. I gained experience building real-world applications using JavaScript, Node.js, databases, and modern frameworks.",
+      "containApt": "Skills",
+      "containAptInfo": "- Linux, Git, GitHub, HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Angular, Node.js, SQL."
+    }
+  },
+  "page_projects": {
+    "one": {
+      "datePost": "Apr 21, 2025",
+      "containTitle": "Cocktails App",
+      "containDate": "Jul. 2024",
+      "containExplain": "Web project to discover which cocktails and drinks you can make with the ingredients you have, with an integrated recipe book and a favorites section.",
+      "containApt": "Technologies used",
+      "containAptInfo": "- HTML5, CSS, TailwindCSS, TypeScript, React, vite."
+    },
+    "two": {
+      "datePost": "Apr 21, 2025",
+      "containTitle": "Weather App",
+      "containDate": "Jul. 2024",
+      "containExplain": "This website lets you know the current and forecasted weather of your location in real time, along with other important weather-related parameters. It also allows searching weather for any place you want.",
+      "containApt": "Technologies used",
+      "containAptInfo": "- HTML5, CSS, TailwindCSS, TypeScript, React, vite."
+    },
+    "three": {
+      "datePost": "Apr 21, 2025",
+      "containTitle": "Expense Planner",
+      "containDate": "Jun. 2024",
+      "containExplain": "Easy-to-use tool to manage and plan your expenses. Helps you track your income and spending, and optimize your budget. Ideal for keeping your finances organized.",
+      "containApt": "Technologies used",
+      "containAptInfo": "- HTML5, CSS, TypeScript, React, vite."
+    },
+    "four": {
+      "datePost": "Apr 21, 2025",
+      "containTitle": "CoinMarketWatch",
+      "containDate": "Jun. 2024",
+      "containExplain": "Tool to track prices and variations of your favorite cryptocurrencies, allowing you to choose the currency that best fits your location. Also includes an up-to-date news section on the crypto world.",
+      "containApt": "Technologies used",
+      "containAptInfo": "- HTML5, CSS, TailwindCss, Vanilla JavaScript, vite."
+    },
+    "five": {
+      "datePost": "Apr 21, 2025",
+      "containTitle": "Headphones E-commerce",
+      "containDate": "Mar. 2024",
+      "containExplain": "This project is an example of an e-commerce system developed with Vanilla JavaScript. It allows users to explore a variety of products, add them to a shopping cart, complete a form for shipping details, and simulate payment of the selected order.",
+      "containApt": "Technologies used",
+      "containAptInfo": "- HTML5, CSS, Sass, Vanilla JavaScript, vite."
+    },
+    "six": {
+      "datePost": "Apr 21, 2025",
+      "containTitle": "ShortUrl App",
+      "containDate": "Feb. 2024",
+      "containExplain": "This project aims to address the need for sharing concise links, providing an efficient and versatile solution for URL shortening and QR code access. With an intuitive and easy-to-use platform, I aim to simplify link sharing while optimizing the user experience.",
+      "containApt": "Technologies used",
+      "containAptInfo": "- HTML5, CSS, Sass, Vanilla JavaScript, vite."
+    }
+  }
+}

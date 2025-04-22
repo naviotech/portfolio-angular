@@ -1,13 +1,16 @@
-<div class="py-6 px-4 w-full fixed bg-white/70 backdrop-blur-xs z-40">
+<div
+  class="py-6 px-4 w-full fixed bg-white/70 backdrop-blur-xs z-40 dark:bg-gray-900/70"
+>
   <section class="flex w-full justify-between">
-    <div class="cursor-pointer">
+    <div class="cursor-pointer flex" #dropdownContainer>
       <svg
+        (click)="toggleDropdown()"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-6"
+        class="size-6 dark:text-white"
       >
         <path
           stroke-linecap="round"
@@ -15,13 +18,35 @@
           d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"
         />
       </svg>
+      @if (isOpen) {
+      <div
+        class="absolute bg-white border mt-8 rounded shadow-md w-36 z-10 dark:bg-gray-900 dark:text-white"
+      >
+        <div
+          class="px-4 py-2 hover:bg-gray-100 cursor-pointer flex justify-between dark:hover:bg-gray-700"
+          (click)="toggleDropdown(); changeLang('es')"
+          [ngClass]="{ 'bg-gray-400': currentLang() === 'es' }"
+        >
+          🇪🇸 {{ "header.lang.cast" | translate }}
+        </div>
+        <div
+          class="px-4 py-2 hover:bg-gray-100 cursor-pointer flex justify-between dark:hover:bg-gray-700"
+          (click)="toggleDropdown(); changeLang('en')"
+          [ngClass]="{ 'bg-gray-400': currentLang() === 'en' }"
+        >
+          🇬🇧 {{ "header.lang.en" | translate }}
+        </div>
+      </div>
+      }
     </div>
     <div>
+      @if (themeService.getCurrentTheme() === 'dark') {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="currentColor"
-        class="w-6 aspect-square"
+        fill="white"
+        class="w-6 aspect-square cursor-pointer"
+        (click)="toggleTheme()"
       >
         <g
           class="transform-box-fill transform origin-center scale-[var(--icon-scale)] translate-y-[var(--icon-translate)]"
@@ -30,32 +55,56 @@
             class="theme-toggle__status theme-toggle__sun"
             d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
           ></path>
-          <!-- <path
-            class="theme-toggle__status theme-toggle__moon"
-            d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
-          ></path> -->
         </g>
       </svg>
+      } @if(themeService.getCurrentTheme() === 'light'){
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="w-6 aspect-square cursor-pointer"
+        (click)="toggleTheme()"
+      >
+        <g
+          class="transform-box-fill transform origin-center scale-[var(--icon-scale)] translate-y-[var(--icon-translate)]"
+        >
+          <path
+            class="theme-toggle__status theme-toggle__moon"
+            d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+          ></path>
+        </g>
+      </svg>
+      }
     </div>
   </section>
 </div>
-<section class="w-full flex flex-col justify-center items-center">
-  <div class="relative w-full bg-blue-200 h-32 mt-20 max-w-3xl sm:h-42 lg:h-60 overflow-hidden">
-    <rocket/>
+<section
+  class="w-full flex flex-col justify-center items-center dark:bg-gray-900 dark:text-white"
+>
+  <div
+    class="relative w-full bg-blue-200 h-32 mt-20 max-w-3xl sm:h-42 lg:h-60 overflow-hidden dark:bg-blue-950"
+  >
+    <rocket />
   </div>
   <section class="w-full px-4 max-w-3xl">
-    <div>
+    <div class="flex justify-between">
       <img
         src="assets/img/web.jpg"
-        class="rounded-full border-3 border-yellow-700/80 w-24 h-24 relative -top-13"
+        class="rounded-full border-3 border-yellow-500/80 w-24 h-24 relative -top-13"
       />
+      <a
+        class="bg-blue-400 text-white dark:bg-white rounded-2xl flex justify-center items-center mt-6 mr-2 sm:mr-12 w-34 h-8 dark:text-black text-center cursor-pointer hover:hover:bg-blue-400/70 dark:hover:bg-blue-400 dark:hover:text-white transition-all"
+        href="https://www.instagram.com/naviotech/"
+        target="_blank"
+        ><span>Seguir</span></a
+      >
     </div>
   </section>
   <section class="w-full px-4 max-w-3xl">
     <div class="flex flex-col gap-0">
       <div class="flex items-center gap-3">
-        <h1 class="text-3xl font-bold -mt-8">Eduardo Navío</h1>
-        <span class="relative -mt-9">
+        <h1 class="text-3xl font-bold -mt-4">Eduardo Navío</h1>
+        <span class="relative -mt-4">
           <span
             class="w-2.5 h-6 bg-blue-400 rotate-180 rounded-4xl absolute -top-0.5 bottom-0 left-1.5 z-10"
           ></span>
@@ -77,11 +126,11 @@
       <a
         href="https://www.instagram.com/naviotech/"
         target="_blank"
-        class="text-gray-400 cursor-pointer"
+        class="text-gray-400 cursor-pointer w-24"
         >{{ "@naviotech" }}</a
       >
     </div>
-    <p class="mt-2">Transformando ideas a código ✨</p>
+    <p class="mt-2">{{ "header.slogan" | translate }}</p>
     <p>Full stack Developer</p>
 
     <div class="mt-8 flex items-center gap-4 flex-wrap mb-12 pr-8">
@@ -100,9 +149,14 @@
             d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z"
           />
         </svg>
-        <p class="text-gray-500 text-sm">Disponible</p>
+        <p class="text-gray-500 text-sm">
+          {{ "header.status.available" | translate }}
+        </p>
       </div>
-      <a class="flex items-center gap-1 -mb-3 cursor-pointer group" href="#links">
+      <div
+        class="flex items-center gap-1 -mb-3 cursor-pointer group"
+        (click)="scrollToFooter()"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -118,8 +172,10 @@
           />
         </svg>
 
-        <p class="text-gray-500 text-sm group-hover:text-blue-500">Links</p>
-      </a>
+        <p class="text-blue-500 text-sm group-hover:underline font-bold">
+          {{ "header.nav.links" | translate }}
+        </p>
+      </div>
       <div class="flex items-center gap-1 -mb-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +191,9 @@
             d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12M12.265 3.11a.375.375 0 1 1-.53 0L12 2.845l.265.265Zm-3 0a.375.375 0 1 1-.53 0L9 2.845l.265.265Zm6 0a.375.375 0 1 1-.53 0L15 2.845l.265.265Z"
           />
         </svg>
-        <p class="text-gray-500 text-sm">Enero 31</p>
+        <p class="text-gray-500 text-sm">
+          {{ "header.status.birthday" | translate }}
+        </p>
       </div>
       <div class="flex items-center gap-1 -mb-3">
         <svg
@@ -152,49 +210,53 @@
             d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
           />
         </svg>
-        <p class="text-gray-500 text-sm">Se unió en Octubre de 2022</p>
+        <p class="text-gray-500 text-sm">
+          {{ "header.status.join" | translate }}
+        </p>
       </div>
     </div>
     <nav class="flex justify-between mb-6 border-gray-300 lg:justify-around">
-      <a class="hover:bg-gray-200 w-full text-center py-4" routerLink="/"
+      <a
+        class="hover:bg-gray-200 w-full text-center py-4 dark:hover:bg-gray-700"
+        routerLink="/"
         ><span
           routerLinkActive="border-b-4 border-blue-400"
           [routerLinkActiveOptions]="{ exact: true }"
           class="py-2 flex-nowrap"
-          >Sobre mí</span
+          >{{ "header.nav.about" | translate }}</span
         ></a
       >
       <a
-        class="hover:bg-gray-200 w-full text-center py-4"
+        class="hover:bg-gray-200 w-full text-center py-4 dark:hover:bg-gray-700"
         routerLink="/experience"
       >
         <span
           routerLinkActive="border-b-4 border-blue-400"
           [routerLinkActiveOptions]="{ exact: true }"
           class="py-2 flex-nowrap"
-          >Experiencia</span
+          >{{ "header.nav.experience" | translate }}</span
         ></a
       >
       <a
-        class="hover:bg-gray-200 w-full text-center py-4"
+        class="hover:bg-gray-200 w-full text-center py-4 dark:hover:bg-gray-700"
         routerLink="/education"
       >
         <span
           routerLinkActive="border-b-4 border-blue-400"
           [routerLinkActiveOptions]="{ exact: true }"
           class="py-2 flex-nowrap"
-          >Educación</span
+          >{{ "header.nav.education" | translate }}</span
         ></a
       >
       <a
-        class="hover:bg-gray-200 w-full text-center py-4"
+        class="hover:bg-gray-200 w-full text-center py-4 dark:hover:bg-gray-700"
         routerLink="/projects"
       >
         <span
           routerLinkActive="border-b-4 border-blue-400"
           [routerLinkActiveOptions]="{ exact: true }"
           class="py-2 flex-nowrap"
-          >Proyectos</span
+          >{{ "header.nav.projects" | translate }}</span
         ></a
       >
     </nav>
