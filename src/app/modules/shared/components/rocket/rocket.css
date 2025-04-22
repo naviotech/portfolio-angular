@@ -6,6 +6,7 @@
   position: absolute;
   left: 50%;
   top: 40%;
+  z-index: 6;
 }
 
 .rocket {
@@ -652,6 +653,7 @@
   border-radius: 50%;
   animation: twinkle 1.5s infinite alternate;
   opacity: 0;
+  z-index: 1;
 }
 
 @keyframes twinkle {
