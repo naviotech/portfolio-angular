@@ -626,8 +626,6 @@
   transform: rotate(-45deg);
 }
 
-
-/* Animaciones */
 @keyframes flap {
   0%, 100% {
     transform: rotate(0deg);
@@ -646,24 +644,31 @@
   }
 }
 
-/* @keyframes fly {
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  animation: twinkle 1.5s infinite alternate;
+  opacity: 0;
+}
+
+@keyframes twinkle {
   0% {
-    transform: translateX(0) translateY(0);
-  }
-  25% {
-    transform: translateX(-60px) translateY(50px);
-  }
-  55% {
-    transform: translateX(-80px) translateY(100px);
-  }
-  75% {
-    transform: translateX(-120px) translateY(150px);
-  }
-  75% {
-    transform: translateX(-140px) translateY(150px);
+    opacity: 0.5;
   }
   100% {
-    transform: translateX(-170px) translateY(200px);
+    opacity: 1;
   }
-} */
+}
 
+.star:nth-child(odd) {
+  animation-duration: 2s;
+  animation-delay: calc(-1s * random());
+}
+
+.star:nth-child(even) {
+  animation-duration: 3s;
+  animation-delay: calc(-1s * random());
+}

@@ -67,3 +67,16 @@
     </div>
   </div>
 </div>
+
+@if (themeService.getCurrentTheme() === 'dark') {
+  <div class="sky" id="sky_stars">
+    <div
+      *ngFor="let star of stars"
+      class="star"
+      [style.top]="star.top"
+      [style.left]="star.left"
+      [style.animation-duration]="star.animationDuration"
+      [style.animation-delay]="star.animationDelay"
+    ></div>
+  </div>
+}
