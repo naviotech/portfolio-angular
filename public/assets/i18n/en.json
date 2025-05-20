@@ -23,7 +23,7 @@
     "one": {
       "datePost": "Mar 30, 2025",
       "containTitle": "Full Stack Developer (Needcarhelp SL)",
-      "containDate": "Aug. 2024 - Present [Barcelona, Spain]",
+      "containDate": "Aug. 2024 - May. 2025",
       "containExplain": "Recognized for my contributions to multiple projects, including a custom user dashboard that improved user experience and enhanced client engagement.",
       "containApt": "Responsibilities",
       "containAptInfo": "- Developed a custom user dashboard for personalized service management.\n- Collaborated with designers during sprint planning to ensure alignment with goals and improved usability.\n- Implemented new features to boost customer acquisition and retention through scalable solutions.\n- Played a key role in developing an internal mobile app, which automated manual tasks and reduced resource usage across departments.\n- Worked closely with designers and developers in an Agile environment to meet deadlines.\n- Led the product presentation to investors, highlighting its positive business impact."
@@ -77,6 +77,14 @@
       "containExplain": "Full Stack Web Development Master's program at ConquerBlocks, focused on hands-on learning of modern frontend and backend technologies. I gained experience building real-world applications using JavaScript, Node.js, databases, and modern frameworks.",
       "containApt": "Skills",
       "containAptInfo": "- Linux, Git, GitHub, HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Angular, Node.js, SQL."
+    },
+    "seven": {
+      "datePost": "20 May. 2025",
+      "containTitle": "Full Stack Developer Master's Degree (Isabel I University)",
+      "containDate": "2023 - 2025",
+      "containExplain": "Full Stack Web Development Master's, focused on hands-on learning of modern frontend and backend technologies. I gained experience building real-world applications using JavaScript, Node.js, databases, and modern frameworks.",
+      "containApt": "Aptitudes",
+      "containAptInfo": "- Linux, Git, GitHub, HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Angular, Node.js, SQL..."
     }
   },
   "page_projects": {

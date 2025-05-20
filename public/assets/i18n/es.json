@@ -23,7 +23,7 @@
     "one": {
       "datePost": "Mar 30, 2025",
       "containTitle": "Desarrollador Full Stack (Needcarhelp SL)",
-      "containDate": "Ago. 2024 - Actualidad [Barcelona, España]",
+      "containDate": "Ago. 2024 - May. 2025",
       "containExplain": "Reconocido por mis contribuciones en múltiples proyectos, incluyendo un panel de usuario para clientes, que mejoró la experiencia de usuario y fortaleció el compromiso con los clientes.",
       "containApt": "Responsabilidades",
       "containAptInfo": "- Desarrollo de un panel de usuario personalizado para gestión individual de servicios.\n- Colaboración con diseñadores en sprints, asegurando alineación con objetivos de producto y mejoras en usabilidad.\n- Implementación de nuevas funcionalidades enfocadas en captación y retención de clientes.\n- Desarrollo de una app móvil interna que automatizó tareas manuales y optimizó recursos interdepartamentales.\n- Trabajo en equipo en un entorno Ágil con entregas a tiempo.\n- Presentación del producto final ante inversores destacando su impacto en el negocio."
@@ -74,9 +74,17 @@
       "datePost": "15 Abr. 2025",
       "containTitle": "Máster Full Stack Developer (ConquerBlocks)",
       "containDate": "Sept. 2022 - Oct. 2024 [Barcelona, España]",
-      "containExplain": "Máster en Desarrollo Web Full Stack en ConquerBlocks, enfocado en el aprendizaje práctico de tecnologías modernas de frontend y backend. Adquirí experiencia construyendo aplicaciones reales utilizando JavaScript, Node.js, bases de datos y frameworks modernos.",
+      "containExplain": "Máster en Desarrollo Full Stack en ConquerBlocks, enfocado en el aprendizaje práctico de tecnologías modernas de frontend y backend. Adquirí experiencia construyendo aplicaciones reales utilizando JavaScript, Node.js, bases de datos y frameworks modernos.",
       "containApt": "Aptitudes",
       "containAptInfo": "- Linux, Git, GitHub, HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Angular, Node.js, SQL."
+    },
+    "seven": {
+      "datePost": "20 May. 2025",
+      "containTitle": "Máster Full Stack Developer (Universidad Isabel I)",
+      "containDate": "2023 - 2025",
+      "containExplain": "Máster en Desarrollo Full Stack, enfocado en el aprendizaje práctico de tecnologías modernas de frontend y backend. Adquirí experiencia construyendo aplicaciones reales utilizando JavaScript, Node.js, bases de datos y frameworks modernos.",
+      "containApt": "Aptitudes",
+      "containAptInfo": "- Linux, Git, GitHub, HTML, CSS, TailwindCSS, JavaScript, TypeScript, React, Angular, Node.js, SQL..."
     }
   },
   "page_projects": {
