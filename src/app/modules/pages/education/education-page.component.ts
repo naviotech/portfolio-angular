@@ -33,6 +33,20 @@ export default class EducationPageComponent {
   translate = inject(TranslateService);
   infos = signal<Valid[]>([
     {
+      datePost: 'page_education.seven.datePost',
+      imageProfile: 'assets/img/web.jpg',
+      imagePost: './assets/img/ISABEL.png',
+      containTitle: 'page_education.seven.containTitle',
+      containDate: 'page_education.seven.containDate',
+      containExplain: 'page_education.seven.containExplain',
+      containApt: 'page_education.seven.containApt',
+      containAptInfo: 'page_education.seven.containAptInfo',
+      comments: 2,
+      likes: 24,
+      repost: 3,
+      graph: 169,
+    },
+    {
       datePost: 'page_education.one.datePost',
       imageProfile: 'assets/img/web.jpg',
       imagePost: './assets/img/logo-udemy.png',
